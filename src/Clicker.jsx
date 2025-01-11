@@ -4,7 +4,7 @@ export default function Clicker({ buttonText }) {
     const [num, setNum] = useState(0);
 
     function handleClick() {
-        setNum(num >= 10 ? 0 : num + 1);
+        setNum(num => num + 1); // queues up a state change to increment num
     }
 
     return (
