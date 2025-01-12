@@ -9,8 +9,8 @@ import './App.css'
 // import PropertyList from './PropertyList'
 // import Clicker from './Clicker'
 // import ColorBoxes from './pt1/ColorBoxes'
-// import ScoreKeeper from './ScoreKeeper';
-import EmojiClicker from './EmojiClicker';
+import ScoreKeeper from './ScoreKeeper';
+// import EmojiClicker from './EmojiClicker';
 
 // const data = [
 //   {id: '1', item: 'eggs', quantity: 2, completed: false},
@@ -48,10 +48,11 @@ function App() { {/* whatever is in curly braces IS TREATED AS PLAIN JAVASCRIPT*
 
       {/* <ColorBoxes colors={["red", "blue", "green", "yellow", "purple"]}/> */}
 
-      {/* <ScoreKeeper /> */}
+      <ScoreKeeper numPlayers={10} target={10}/>
 
-      <EmojiClicker />
+      {/* <EmojiClicker /> */}
 
+      
 
     </div>
   );
